@@ -33,7 +33,7 @@ CREATE TABLE `produk` (
   `harga_produk` double NOT NULL,
   `stock` int NOT NULL,
   `gambar` varchar(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `produk`
@@ -62,7 +62,7 @@ CREATE TABLE `stock_masuk` (
   `id_produk` int NOT NULL,
   `tanggal_masuk` varchar(40) NOT NULL,
   `jumlah_masuk` int NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `stock_masuk`
@@ -83,7 +83,7 @@ CREATE TABLE `stok_keluar` (
   `id_produk` int NOT NULL,
   `tanggal_keluar` varchar(40) NOT NULL,
   `jumlah_keluar` int NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `stok_keluar`
@@ -106,7 +106,7 @@ CREATE TABLE `transaksi` (
   `tanggal_transaksi` varchar(40) NOT NULL,
   `jumlah_transaksi` int NOT NULL,
   `total_harga` double NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `transaksi`
@@ -194,8 +194,8 @@ CREATE TABLE `user` (
   `nama_lengkap` varchar(100) NOT NULL,
   `jenis_kelamin` enum('Laki-laki','Perempuan') NOT NULL,
   `alamat` text NOT NULL,
-  `level` enum('admin','operator') CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  `level` enum('admin','operator') CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `user`
